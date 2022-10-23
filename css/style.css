@@ -71,7 +71,7 @@ h3 {
   padding: 0 215px;
   justify-content: space-between;
   height: 80px;
-  max-width: 1600px;
+  min-width: 1600px;
 }
 .nav{
   display: flex;
