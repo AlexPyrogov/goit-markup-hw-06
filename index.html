@@ -345,7 +345,7 @@
         </address>
       </div>
       <div class="footsoc">
-        <h2>присоединяйтесь</h2>
+        <h3>присоединяйтесь</h3>
         <ul class="socnet">
           <li>
             <a href="https://www.instagram.com/"
@@ -369,15 +369,53 @@
           </li>
         </ul>
       </div>
+      <form class="footer-form">
+        <h3>Подпишитесь на рассылку</h3>
+        <label>
+          <input
+            class="footer-email"
+            type="email"
+            name="subscription-email"
+            placeholder="Email"
+          />
+        </label>
+        <button class="heder-button" type="submit">Подписаться</button>
+      </form>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="window-modal">
+        <h2 class="head-modal">Оставьте свои данные, мы вам перезвоним</h2>
         <button class="button-modal" data-modal-close>
           <svg>
             <use href="./images/sprite.svg#icon-vector"></use>
           </svg>
         </button>
+        <form class="form-modal">
+          <label>Имя<input class="input-modal" type="text" /></label>
+          <label>Телефон<input class="input-modal" type="text" /></label>
+          <label>Почта<input class="input-modal" type="text" /></label>
+          <label
+            >Комментарий
+            <textarea
+              class="input-modal comment-modal"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label class="agreement-modal">
+            <div>
+              <input
+                class="check-modal"
+                type="checkbox"
+                name="agreement-modal"
+              />
+              <span class="icon-modal"></span>
+              Соглашаюсь с рассылкой и принимаю
+              <a href="./">Условия договора</a>
+            </div>
+          </label>
+          <button class="submit-modal" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
 
