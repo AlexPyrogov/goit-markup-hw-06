@@ -555,6 +555,7 @@ h3 {
   fill: currentColor;
 }
 .footer {
+  min-width: 1600px;
   background-color: var(--footer-background-color);
   padding: 60px 215px;
   display: flex;
