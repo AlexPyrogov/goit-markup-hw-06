@@ -50,7 +50,7 @@ h3 {
   padding-bottom: 94px;
   padding-left: 215px;
   padding-right: 215px;
-  max-width: 1600px;
+  min-width: 1600px;
 }
 .portfolio{
   padding-top: 94px;
