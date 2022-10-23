@@ -160,6 +160,7 @@ h3 {
   ),
   url("../images/heroimg.jpg");
   text-align: center;
+  min-width: 1600px;
 }
 .backdrop{
   position: fixed;
