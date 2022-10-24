@@ -379,7 +379,10 @@
             placeholder="Email"
           />
         </label>
-        <button class="heder-button" type="submit">Подписаться</button>
+        <button class="heder-button" type="submit">
+          Подписаться
+          <svg><use href="./images/sprite.svg#icon-send"</svg>
+        </button>
       </form>
     </footer>
 
@@ -392,14 +395,48 @@
           </svg>
         </button>
         <form class="form-modal">
-          <label>Имя<input class="input-modal" type="text" /></label>
-          <label>Телефон<input class="input-modal" type="text" /></label>
-          <label>Почта<input class="input-modal" type="text" /></label>
           <label
-            >Комментарий
+            ><span>Имя</span
+            ><input
+              class="input-modal"
+              type="text"
+              placeholder=" "
+              name="name-modal"
+            />
+            <svg class="icon-input-modal">
+              <use href="./images/sprite.svg#icon-person"></use>
+            </svg>
+          </label>
+          <label
+            ><span>Телефон</span
+            ><input
+              class="input-modal"
+              type="tel"
+              placeholder=" "
+              name="phone-modal"
+            />
+            <svg class="icon-input-modal">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label
+            ><span>Почта</span
+            ><input
+              class="input-modal"
+              type="email"
+              placeholder=" "
+              name="email-modal"
+            />
+            <svg class="icon-input-modal">
+              <use href="./images/sprite.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label
+            ><span>Комментарий</span>
             <textarea
               class="input-modal comment-modal"
               placeholder="Введите текст"
+              name="comment-modal"
             ></textarea>
           </label>
           <label class="agreement-modal">

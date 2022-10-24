@@ -233,12 +233,44 @@ h3 {
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
 }
+.form-modal label{
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  color: var(--secondary-text-color);
+}
+.form-modal label:focus-within{
+  color: var(--accent-color);
+}
+.form-modal span{
+  color: var(--primary-text-color);
+}
+ svg path {
+   stroke: inherit;
+   stroke-width: inherit;
+   fill: inherit;
+ }
+.icon-input-modal{
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 12px;
+  bottom: 11px;
+  fill: currentColor;
+}
 .input-modal{
   width: 448px;
   height: 40px;
-  margin: 4px 0 10px;
+  margin-top: 4px;
   border: 1px solid rgb(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding-left: 42px;
+  outline: none;
+  color: var(--secondary-text-color);
+}
+.input-modal:focus, .input-modal:active{
+  border-color: var(--accent-color);
+  transition: border-color 250ms var(--cubik);
 }
 .comment-modal{
   padding: 12px 16px;
@@ -251,6 +283,9 @@ h3 {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+.comment-modal:focus, .comment-modal:active{
+  color: var(--secondary-text-color);
 }
 .agreement-modal{
   display: block;
@@ -287,11 +322,18 @@ h3 {
   display: inline-block;
   width: 16px;
   height: 15px;
-  background-color: #757575;
+  outline: 2px solid var(--secondary-text-color);
+  outline-offset: -2px;
+  background-color: var(--white-color);
+  border-radius: 2px;
 }
 
 .check-modal:checked + .icon-modal{
-  background-color: #2196F3;
+  background-image: url(../images/iconcheck.svg);
+  background-size: contain;
+  background-origin: border-box;
+  outline: 0;
+  transition: background-image 250ms var(--cubik);
 }
 .submit-modal{
   display: block;
@@ -637,6 +679,18 @@ h3 {
   min-width: 570px;
   margin-top: 12px;
   border-color: currentColor;
+}
+.footer-form .heder-button{
+  position: relative;
+  padding-right: 62px;
+}
+.footer-form .heder-button svg{
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
 }
 .footer-email{
   display: inline-block;
